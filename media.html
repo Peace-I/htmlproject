@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A media message about me</title>
+</head>
+<body>
+    <h1>A Media Message About Me</h1>
+
+    <h2>My Image section</h2>
+    <p>This is a picture of me</p>
+    <picture>
+        <source srcset="./images/laptop.jpg" media="(min-width: 1024px)" width="400px">
+        <source srcset="./images/tablet.jpg" media="(min-width: 768px)" width="300px">
+        <source srcset="./images/mobile.jpg" media="(max-width: 767px)" width="200px">
+        <img src="images/me-default.jpg" alt="A picture of me">
+    </picture>
+
+    <!-- Video Element -->
+    <h2>My Video Section</h2>
+    <p>Watch this short video to learn more about me:</p>
+    <video controls>
+        <source src="./video/altschoolvideo.mp4" type="video/mp4">
+        <source src="./video/altschoolvideo2.mp4" type="video/ogg">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Audio Element -->
+    <h2>An Audio Message From Me</h2>
+    <p>Listen to this audio that tells a short story about my "WHY" in the Altschool journey:</p>
+    <audio controls>
+        <source src="./audio/altschoolaudio.aac" type="audio/mpeg">
+        <source src="./audio/altschoolaudio2.aac" type="audio/ogg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Embedded Iframe Element -->
+    <h2>Embedded Map</h2>
+    <p>Find the location of my favorite spot here:</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434508282!2d144.95565181531914!3d-37.81732797975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43cf7c6f01%3A0x2b2d32a27b7b83c4!2sMelbourne!5e0!3m2!1sen!2sau!4v1632920047184!5m2!1sen!2sau" 
+        width="600" 
+        height="450" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+
+    <!-- Back to Home Link -->
+    <p>
+        <a href="https://altschoolafrica.com/">Back to Home</a>
+    </p>
+</body>
+</html>
